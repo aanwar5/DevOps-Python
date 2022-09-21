@@ -1,11 +1,6 @@
 #!/usr/bin/env python
 import click
 
-"""
-This is the DocString for app.py
-This is a fake documentation for the test to pass
-"""
-
 
 def change(amount):
     # calculate the resultant change and store the result (res)
