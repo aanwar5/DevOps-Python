@@ -40,7 +40,6 @@ def make_change(amount):
         for num, coin in correct_change.items():
             click.echo(click.style(f"{coin}: {num}", fg="green"))
 
-
 if __name__ == "__main__":
     # pylint: disable=no-value-for-parameter
     make_change()
