@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 import click
-'''
+
+"""
 This is the DocString for app.py
 This is a fake documentation for the test to pass
-'''
+"""
+
 
 def change(amount):
     # calculate the resultant change and store the result (res)
@@ -27,6 +29,7 @@ def change(amount):
                 res.append({num: coin_lookup[coin]})
     return res
 
+
 @click.command()
 @click.option(
     "--amount",
@@ -42,7 +45,7 @@ def make_change(amount):
         for num, coin in correct_change.items():
             click.echo(click.style(f"{coin}: {num}", fg="green"))
 
+
 if __name__ == "__main__":
     # pylint: disable=no-value-for-parameter
     make_change()
-    
