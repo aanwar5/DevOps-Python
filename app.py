@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import click
 
-
 def change(amount):
     # calculate the resultant change and store the result (res)
     res = []
@@ -23,7 +22,6 @@ def change(amount):
             if coin in coin_lookup:
                 res.append({num: coin_lookup[coin]})
     return res
-
 
 @click.command()
 @click.option(
