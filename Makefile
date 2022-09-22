@@ -4,7 +4,7 @@ install:
 
 
 test:
-	pytest -vv --cov-report term-missing --cov=app test_*.py
+	python -m pytest -vv test_app.pytest
 
 format:
 	black *.py
