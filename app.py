@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import click
 
-
 def change(amount):
     # calculate the resultant change and store the result (res)
     res = []
@@ -24,7 +23,6 @@ def change(amount):
                 res.append({num: coin_lookup[coin]})
     return res
 
-
 @click.command()
 @click.option(
     "--amount",
@@ -39,7 +37,6 @@ def make_change(amount):
     for correct_change in result:
         for num, coin in correct_change.items():
             click.echo(click.style(f"{coin}: {num}", fg="green"))
-
 
 if __name__ == "__main__":
     # pylint: disable=no-value-for-parameter
