@@ -4,7 +4,7 @@ install:
 
 
 test:
-	python -m pytest -vv test_app.pytest
+	python -m pytest -vv test_app.py
 
 format:
 	black *.py
